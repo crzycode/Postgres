@@ -1,0 +1,6 @@
+install postgres in docker
+docker pull postgres
+
+docker run --name postgres_img -d -e POSTGRES_PASSWORD=kali -p 5432:5432 -v D:/postgres:/var/lib/postgresql/data postgres
+
+docker run --name postgres_img -d -e POSTGRES_PASSWORD=postgres -p 5432:5432 -v D:/postgres:/var/lib/postgres/data postgres
